@@ -1,6 +1,6 @@
 # API Cervejaria
 
-Uma API para gerenciar informações sobre cervejas.
+
 
 ## Visão Geral
 
