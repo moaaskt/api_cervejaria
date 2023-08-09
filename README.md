@@ -18,27 +18,67 @@ A documentação completa da API está disponível [aqui](link_para_documentacao
 
 ## Exemplo de uso:
 
-####  Retorna a lista de todas as cervejas disponíveis.
+###  Retorna a lista de todas as cervejas disponíveis.
 
 ```http
 
 GET /cervejas
 ```
+Esta rota retorna uma lista de todas as cervejarias cadastradas.
 
 
-
-####  Retorna os detalhes da cerveja com o ID especificado.
+###  Retorna os detalhes da cerveja com o ID especificado.
 
 ```http
 GET /cervejas/:id
 
 ```
+Substitua :id pelo ID da cervejaria desejada para obter seus detalhes.
 
-####  Adiciona uma nova cerveja ao sistema.
+###  Adiciona uma nova cerveja ao sistema.
 
 ```http
 POST /cervejas
 ```
+Envie um JSON no corpo da solicitação contendo os detalhes da cervejaria para criar uma nova cerveja.
+
+
+### Buscar Cerveja pelo ABV:
+
+```http
+GET /buscar-cerveja-abv
+```
+buscar cerveja na ordem decrescente pela maior porcentagem de álcool.
+
+### Buscar a ceveja pelo nome
+
+```http
+GET /buscar-cerveja/:nome
+```
+Substitua ':nome' pelo nome da cerveja desejada.
+
+### Buscar cerveja por nacionalidade
+
+```http
+GET /buscar-cerveja-nacionalidade/:nacionalidade
+```
+Substitua ':nacionalidade' pelo nacionalidade da cerveja desejada.
+
+### Atualizar Informações de uma Cerveja:
+
+```http
+PUT /cervejarias/:id
+```
+Substitua :id pelo ID da cervejaria que deseja atualizar e envie um JSON no corpo da solicitação com os novos detalhes.
+
+### Remover uma Cerveja:
+
+```http
+DELETE /cervejarias/:id
+```
+Substitua :id pelo ID da cervejaria que deseja excluir.
+
+
 
 
 ## Tecnologias Utilizadas
