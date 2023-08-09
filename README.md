@@ -18,26 +18,26 @@ A documentação completa da API está disponível [aqui](link_para_documentacao
 
 ## Exemplo de uso:
 
-#### GET /cervejas
+####  Retorna a lista de todas as cervejas disponíveis.
 
-```csharp
+```http
 
-Retorna a lista de todas as cervejas disponíveis.
+GET /cervejas
 ```
 
 
 
-#### GET /cervejas/:id
+####  Retorna os detalhes da cerveja com o ID especificado.
 
-```lua
-Retorna os detalhes da cerveja com o ID especificado.
+```http
+GET /cervejas/:id
 
 ```
 
-#### POST /cervejas
+####  Adiciona uma nova cerveja ao sistema.
 
-```markdown
-Adiciona uma nova cerveja ao sistema.
+```http
+POST /cervejas
 ```
 
 
