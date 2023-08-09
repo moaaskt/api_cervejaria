@@ -16,7 +16,7 @@ A API Cervejaria é um projeto desenvolvido para gerenciar informações sobre d
 
 A documentação completa da API está disponível [aqui](link_para_documentacao_da_api).
 
-Exemplo de uso:
+## Exemplo de uso:
 
 #### GET /cervejas
 
