@@ -26,19 +26,10 @@ GET /cervejas
 ```
 Esta rota retorna uma lista de todas as cervejarias cadastradas.
 
-
-###  Retorna os detalhes da cerveja com o ID especificado.
-
-```http
-GET /cervejas/:id
-
-```
-Substitua :id pelo ID da cervejaria desejada para obter seus detalhes.
-
 ###  Adiciona uma nova cerveja ao sistema.
 
 ```http
-POST /cervejas
+POST /cadastrar-cerveja
 ```
 Envie um JSON no corpo da solicitação contendo os detalhes da cervejaria para criar uma nova cerveja.
 
@@ -67,14 +58,14 @@ Substitua ':nacionalidade' pelo nacionalidade da cerveja desejada.
 ### Atualizar Informações de uma Cerveja:
 
 ```http
-PUT /cervejarias/:id
+PUT /cervejas/:id
 ```
-Substitua :id pelo ID da cervejaria que deseja atualizar e envie um JSON no corpo da solicitação com os novos detalhes.
+Substitua :id pelo ID da cerveja que deseja atualizar e envie um JSON no corpo da solicitação com os novos detalhes.
 
 ### Remover uma Cerveja:
 
 ```http
-DELETE /cervejarias/:id
+DELETE /deletar-cerveja/:id
 ```
 Substitua :id pelo ID da cervejaria que deseja excluir.
 
